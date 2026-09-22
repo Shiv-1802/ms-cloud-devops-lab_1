@@ -33,7 +33,7 @@ describe('the notes API', () => {
     expect(res.body).toEqual([]);
   });
 
-  it('creates a note and reads it back', async () => {
+  it('creates makes the notes', async () => {
     const created = await request(app)
       .post('/api/notes')
       .send({ title: 'first', body: 'hello' });
